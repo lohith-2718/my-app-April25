@@ -1,0 +1,15 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+
+}
+.right{width: 80%;
+height: 100%;
+background-color: azure;}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: blanchedalmond;
+}
