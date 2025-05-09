@@ -1,3 +1,4 @@
+body{margin: 0;}
 .parent{
     width: 100vw;
     height: 100vh;
@@ -11,5 +12,17 @@ background-color: azure;}
 .left{
     width: 20%;
     height: 100%;
-    background-color: blanchedalmond;
+    background-color: black;
+
 }
+button{background-color: brown;
+color: white;
+width: 80%;
+height: 8%;}
+h3{color: white;
+    height: 6%;
+    width: 100%;
+    text-align: center;
+}
+h1{color: white;
+text-align: center;}

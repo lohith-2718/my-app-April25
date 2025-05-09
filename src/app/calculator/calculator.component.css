@@ -1,0 +1,19 @@
+.box{height: 100%;
+width: 100%;
+background-image: url(/assets/world-oceans-day-1528139999.jpg);
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+.cal{height: 55%;
+width: 30%;
+background-color: rgba(0, 0, 0, 0.514);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+
+.S{display: flex;
+gap: 3%;
+justify-content: center;}

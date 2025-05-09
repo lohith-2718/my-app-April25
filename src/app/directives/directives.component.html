@@ -1,0 +1,30 @@
+<h1>Directives</h1>
+
+<h3 *ngFor="let a of ages">{{a}}</h3>
+<ol>
+    <li *ngFor="let a of ages"> {{a}}</li>
+</ol>
+
+<select>
+    <option *ngFor="let state of states">{{state}}</option>
+</select>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product name</th>
+            <th>Price</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td [ngStyle]="{'color':product.price<= 2000?'green':'red'}">{{product.price}}</td>
+            <td [ngClass]="{'g':product.rating>3,'y':((product.rating>2.5)&&(product.rating<=3)),'r': (product.rating<=2.5)}">{{product.rating}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2 *ngIf="false">Lohith is a good boy</h2>
+<h2 *ngIf="true">Balu is a bad boy</h2>

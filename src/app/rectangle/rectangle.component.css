@@ -1,0 +1,15 @@
+.b{height: 100%;
+width: 100%;
+background-image: url(/assets/UTS-3D_POSTER-BKGD.jpg);
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.box{height: 60%;
+width: 35%;
+background-image: url(/assets/rectan.jpg);
+background-size: cover;
+opacity: 0.7 ;
+text-align: center;}
+h2{color: black;}

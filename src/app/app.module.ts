@@ -7,6 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { CalculatorComponent } from './calculator/calculator.component';
+import { RectangleComponent } from './rectangle/rectangle.component';
+import { CircleComponent } from './circle/circle.component';
+import { BMIComponent } from './bmi/bmi.component';
+import { LogoutComponent } from './logout/logout.component';
+import { FormsModule } from '@angular/forms';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +23,20 @@ import { ErrorComponent } from './error/error.component';
     HomeComponent,
     LoginComponent,
     DashboardComponent,
-    ErrorComponent
+    ErrorComponent,
+    WelcomeComponent,
+    DataBindingComponent,
+    CalculatorComponent,
+    RectangleComponent,
+    CircleComponent,
+    BMIComponent,
+    LogoutComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

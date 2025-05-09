@@ -1,0 +1,17 @@
+<h3>{{message}}</h3>
+
+<!--property binding-->
+<input type="text" [disabled]="isDisabled">
+<input type="text" [value]="name"><br>
+
+<!--two way data binding-->
+<input type="text" [(ngModel)]="mobile"><br>
+<button (click)="submit()"></button>
+
+<h2>Calculator</h2>
+<label for="">Num1</label>
+<input type="number" [(ngModel)]="num1"><br>
+<label for="">Num2</label>
+<input type="number" [(ngModel)]="num2"><br>
+<button (click)="calculate()" [disabled]="(num1==0)|| (num2==0)"> calculate</button>
+<h2> result: {{sum}} </h2>
