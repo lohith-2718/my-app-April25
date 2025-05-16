@@ -1,0 +1,21 @@
+body{margin: 0;}
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+
+}
+.right{width: 80%;
+height: 100%;
+background-color: azure;
+overflow: auto;}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    overflow: auto;
+
+}
+h2{color: aliceblue;}
+h1{color: aliceblue;}

@@ -16,7 +16,11 @@ import { BMIComponent } from './bmi/bmi.component';
 import { LogoutComponent } from './logout/logout.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
-
+import { EmployeeComponent } from './employee/employee.component';
+import { ListComponent } from './list/list.component';
+import { EmployeeDataComponent } from './employee-data/employee-data.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +35,17 @@ import { DirectivesComponent } from './directives/directives.component';
     CircleComponent,
     BMIComponent,
     LogoutComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    EmployeeComponent,
+    ListComponent,
+    EmployeeDataComponent,
+    VehiclesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+     HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

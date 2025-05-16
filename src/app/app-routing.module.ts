@@ -12,6 +12,10 @@ import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { LogoutComponent } from './logout/logout.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { ListComponent } from './list/list.component';
+import { EmployeeDataComponent } from './employee-data/employee-data.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
 
 const routes: Routes = [
   {path:'login' , component:LoginComponent},
@@ -27,6 +31,12 @@ const routes: Routes = [
               {path:'logout',component:LogoutComponent},
               {path:'directives',component:DirectivesComponent}
   ]},
+  {path:'employee', component:EmployeeComponent,
+    children:[{path:'list', component:ListComponent},
+              {path:'employee-data',component:EmployeeDataComponent},
+              {path:'vehicles', component:VehiclesComponent}
+    ]
+  },
   {path:'**', component:ErrorComponent}
 ];
 

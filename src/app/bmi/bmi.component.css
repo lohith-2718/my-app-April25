@@ -1,0 +1,12 @@
+.b{height: 100%;
+    width: 100%;
+    background-image: url(/assets/bmi.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .box{height: 60%;
+    width: 35%;
+     text-align: center;
+    background-color: rgba(0, 0, 0, 0.349);}

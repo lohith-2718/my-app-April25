@@ -19,8 +19,8 @@
     </thead>
     <tbody>
         <tr *ngFor="let product of products">
-            <td>{{product.name}}</td>
-            <td [ngStyle]="{'color':product.price<= 2000?'green':'red'}">{{product.price}}</td>
+            <td>{{product.name | uppercase}}</td>
+            <td [ngStyle]="{'color':product.price<= 2000?'green':'red'}">{{product.price | currency}}</td>
             <td [ngClass]="{'g':product.rating>3,'y':((product.rating>2.5)&&(product.rating<=3)),'r': (product.rating<=2.5)}">{{product.rating}}</td>
         </tr>
     </tbody>
@@ -28,3 +28,10 @@
 
 <h2 *ngIf="false">Lohith is a good boy</h2>
 <h2 *ngIf="true">Balu is a bad boy</h2>
+
+
+<h3> {{today}} </h3>
+<h4>{{today | date}}</h4>
+<h4>{{today | date:'dd-MM-yyyy'}}</h4>
+<h4>{{today | date:'hh-mm'}}</h4>
+<h4>{{today | date:'hh:mm:ss'}}</h4>
